@@ -1,5 +1,7 @@
 package shapes
 
+import "fmt"
+
 type Shape interface {
 	GetArea() float64
 }
@@ -14,6 +16,7 @@ type Rectangle struct {
 }
 
 func (c Circle) GetArea() float64 {
+	fmt.Println("Calculating area of circle")
 	return 3.14 * c.Radius * c.Radius
 }
 
